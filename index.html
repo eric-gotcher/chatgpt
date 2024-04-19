@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #ffcccc;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .product {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Makeup Store</h1>
+    </header>
+    <div class="container">
+        <div class="product">
+            <h2>Blush</h2>
+            <p>A blush to add a natural rosy glow to your cheeks.</p>
+            <p>Price: $10</p>
+            <button onclick="addToCart('Blush')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h2>Mascara</h2>
+            <p>An intense black mascara for voluminous lashes.</p>
+            <p>Price: $12</p>
+            <button onclick="addToCart('Mascara')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h2>Beauty Blender</h2>
+            <p>A soft and bouncy sponge for flawless makeup application.</p>
+            <p>Price: $8</p>
+            <button onclick="addToCart('Beauty Blender')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h2>Lip Gloss</h2>
+            <p>A shiny lip gloss for a luscious pout.</p>
+            <p>Price: $6</p>
+            <button onclick="addToCart('Lip Gloss')">Add to Cart</button>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Makeup Store. All rights reserved.
+    </footer>
+
+    <script>
+        function addToCart(product) {
+            alert(product + " added to cart!");
+        }
+    </script>
+</body>
+</html>
